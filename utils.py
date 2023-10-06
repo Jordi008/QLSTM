@@ -2,6 +2,8 @@ import torch
 from torch import nn
 from torch.utils.data import Dataset
 import pennylane as qml
+import matplotlib.pyplot as plt
+import numpy as np
 
 class SequenceDataset(Dataset):
     def __init__(self, dataframe, target, features, sequence_length=5):
